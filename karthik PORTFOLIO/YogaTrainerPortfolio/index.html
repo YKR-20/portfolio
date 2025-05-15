@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogakarthikraj | Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed-fullscreen flex-center bg-dark z-highest">
+        <div class="loader-spinner"></div>
+        <div class="loading-text">LOADING...</div>
+        <div class="loading-subtext">Initializing the gaming experience</div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header id="header" class="fixed w-full py-4 transition-all z-high">
+        <div class="container">
+            <nav class="flex-between">
+                <a href="https://wa.me/qr/S364WCZA6BRHE1" class="logo">
+                    <div class="logo-circle">
+                        <span>YKR</span>
+                    </div>
+                </a>
+                
+                <div class="nav-links hidden md:flex">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#resume" class="nav-link" data-section="resume">Resume</a>
+                    <a href="#gaming" class="nav-link" data-section="gaming">Gaming</a>
+                    <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+                
+                <button id="menu-toggle" class="md:hidden">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed-fullscreen bg-dark z-high hidden">
+        <div class="mobile-nav flex-center">
+            <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+            <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+            <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+            <a href="#resume" class="mobile-nav-link" data-section="resume">Resume</a>
+            <a href="#gaming" class="mobile-nav-link" data-section="gaming">Gaming</a>
+            <a href="#gallery" class="mobile-nav-link" data-section="gallery">Gallery</a>
+            <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div id="particles-container"></div>
+            <div class="container section-content flex-center text-center">
+                <div class="fade-in">
+                    <div class="avatar-container">
+                        <div class="avatar">
+                            <span>YKR</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="text-white">Hi, I'm </span>
+                        <span class="text-cyan text-shadow-cyan">YogaKarthikRaj</span>
+                    </h1>
+                    
+                    <div class="typing-container">
+                        <span id="typed-text"></span>
+                        <span class="cursor text-pink">|</span>
+                    </div>
+                    
+                    <div class="skill-tags">
+                        <div class="skill-tag" data-delay="600">
+                            <i class="fas fa-laptop-code text-cyan"></i>
+                            <span>Software Trainer</span>
+                        </div>
+                        <div class="skill-tag" data-delay="700">
+                            <i class="fas fa-gamepad text-pink"></i>
+                            <span>Free Fire Gamer</span>
+                        </div>
+                        <div class="skill-tag" data-delay="800">
+                            <i class="fas fa-video text-green"></i>
+                            <span>Video Editor</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">About Me</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-gradient-top"></div>
+            <div class="container section-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-white">About </span>
+                        <span class="text-cyan text-shadow-cyan">Me</span>
+                    </h2>
+                    <div class="section-line bg-cyan"></div>
+                </div>
+                
+                <div class="grid-2">
+                    <div class="about-image reveal-left">
+                        <img src="D:\karthik PORTFOLIO\YogaTrainerPortfolio\assets\images\profile.jpeg" alt="Tech workspace setup">
+                    </div>
+                    
+                    <div class="about-content">
+                        <h3 class="about-subtitle reveal-item">Who am I?</h3>
+                        
+                        <p class="about-text reveal-item">
+                            Hey there! I'm <span class="text-cyan">Yogakarthikraj</span>, a 21-year-old Software Trainer with a passion for technology and gaming. With an MCA degree under my belt, I specialize in training others in software applications while pursuing my own creative interests.
+                        </p>
+                        
+                        <div class="about-info">
+                            <div class="info-item reveal-item" data-delay="600">
+                                <div class="info-icon">
+                                    <i class="fas fa-graduation-cap text-cyan"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Education</h4>
+                                    <p>Master of Computer Applications (MCA)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item reveal-item" data-delay="700">
+                                <div class="info-icon">
+                                    <i class="fas fa-laptop text-pink"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Profession</h4>
+                                    <p>Software Trainer </p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item reveal-item" data-delay="800">
+                                <div class="info-icon">
+                                    <i class="fas fa-gamepad text-green"></i>
+                                </div>
+                                <div class="info-text">
+                                    <h4>Passion</h4>
+                                    <p>Free Fire Gaming & Video Editing</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-buttons reveal-item" data-delay="900">
+                            <a href="#skills" class="about-link text-cyan">
+                                <i class="fas fa-code"></i> My Skills
+                            </a>
+                            <a href="#gaming" class="about-link text-pink">
+                                <i class="fas fa-gamepad"></i> Gaming Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-gradient-top"></div>
+            <div class="container section-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-white">My </span>
+                        <span class="text-pink text-shadow-pink">Skills</span>
+                    </h2>
+                    <div class="section-line bg-pink"></div>
+                </div>
+                
+                <div class="grid-2">
+                    <div class="skills-block reveal-left">
+                        <h3 class="skills-subtitle">
+                            Professional <span class="text-cyan">Skills</span>
+                        </h3>
+                        
+                        <div class="skill-bars">
+                            <div class="skill-bar" data-percentage="90" data-color="cyan-pink" data-delay="400">
+                                <div class="skill-info">
+                                    <span class="skill-name">Programming Skills</span>
+                                    <span class="skill-percentage text-cyan">90%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill bg-gradient-cyan-pink"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar" data-percentage="85" data-color="cyan-pink" data-delay="500">
+                                <div class="skill-info">
+                                    <span class="skill-name">Public Speaking</span>
+                                    <span class="skill-percentage text-cyan">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill bg-gradient-cyan-pink"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar" data-percentage="60" data-color="cyan-pink" data-delay="600">
+                                <div class="skill-info">
+                                    <span class="skill-name">Video Editing</span>
+                                    <span class="skill-percentage text-cyan">60%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill bg-gradient-cyan-pink"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar" data-percentage="95" data-color="cyan-pink" data-delay="700">
+                                <div class="skill-info">
+                                    <span class="skill-name">Tally Prime</span>
+                                    <span class="skill-percentage text-cyan">95%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill bg-gradient-cyan-pink"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-block reveal-right">
+                        <h3 class="skills-subtitle">
+                            Gaming <span class="text-green">Skills</span>
+                        </h3>
+                        
+                        <div class="skill-bars">
+                            <div class="skill-bar" data-percentage="88" data-color="green-cyan" data-delay="600">
+                                <div class="skill-info">
+                                    <span class="skill-name">Free Fire Proficiency</span>
+                                    <span class="skill-percentage text-green">88%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill bg-gradient-green-cyan"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar" data-percentage="92" data-color="green-cyan" data-delay="700">
+                                <div class="skill-info">
+                                    <span class="skill-name">Tactical Gameplay</span>
+                                    <span class="skill-percentage text-green">92%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill bg-gradient-green-cyan"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar" data-percentage="80" data-color="green-cyan" data-delay="800">
+                                <div class="skill-info">
+                                    <span class="skill-name">Team Coordination</span>
+                                    <span class="skill-percentage text-green">80%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill bg-gradient-green-cyan"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar" data-percentage="85" data-color="green-cyan" data-delay="900">
+                                <div class="skill-info">
+                                    <span class="skill-name">Quick Reflexes</span>
+                                    <span class="skill-percentage text-green">85%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill bg-gradient-green-cyan"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services-container">
+                    <div class="services-cards">
+                        <div class="service-card reveal-up" data-delay="800">
+                            <div class="service-icon">
+                                <i class="fas fa-chalkboard-teacher text-cyan"></i>
+                            </div>
+                            <h4 class="service-title">Software Training</h4>
+                            <p class="service-desc">Specialized in teaching Tally Prime and other software applications with a focus on practical implementation.</p>
+                        </div>
+                        
+                        <div class="service-card reveal-up" data-delay="900">
+                            <div class="service-icon">
+                                <i class="fas fa-video text-pink"></i>
+                            </div>
+                            <h4 class="service-title">Video Editing</h4>
+                            <p class="service-desc">Currently learning and developing skills in video editing to create engaging content for various platforms.</p>
+                        </div>
+                        
+                        <div class="service-card reveal-up" data-delay="1000">
+                            <div class="service-icon">
+                                <i class="fas fa-microphone text-green"></i>
+                            </div>
+                            <h4 class="service-title">Public Speaking</h4>
+                            <p class="service-desc">Strong communication skills for effective training, presentations, and engaging with audiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section resume-section">
+            <div class="section-gradient-top"></div>
+            <div class="container section-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-white">My </span>
+                        <span class="text-green text-shadow-green">Resume</span>
+                    </h2>
+                    <div class="section-line bg-green"></div>
+                </div>
+                
+                <div class="resume-container">
+                    <div class="resume-header">
+                        <div class="resume-actions reveal-item">
+                            <a href="https://drive.google.com/file/d/1wxor9_UGr7FzQxI6Ke_qkh2wXSB9P7cd/view?usp=drivesdk" class="btn btn-primary" >
+                                <i class="fas fa-download"></i> Download CV
+                            </a>
+                            <p class="resume-note text-gray mt-2">
+                                <!-- <i class="fas fa-info-circle"></i> Replace with your actual resume file in assets/resume.pdf -->
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-content">
+                        <div class="resume-card reveal-up" data-delay="300">
+                            <div class="resume-card-header">
+                                <h3 class="resume-card-title">
+                                    <i class="fas fa-graduation-cap text-cyan"></i> Education
+                                </h3>
+                            </div>
+                            <div class="resume-timeline">
+                                <div class="resume-item">
+                                    <div class="resume-date">2024 - 2026</div>
+                                    <h4 class="resume-item-title">Master of Computer Applications (MCA)</h4>
+                                    <div class="resume-place">Azhagappa University,Karaikudi, Tamil Nadu</div>
+                                    <p class="resume-desc">Specialized in software development and application training with excellent academic performance.</p>
+                                </div>
+                                <div class="resume-item">
+                                    <div class="resume-date">2021 - 2024</div>
+                                    <h4 class="resume-item-title">Bachelor of Computer Applications (BCA)</h4>
+                                    <div class="resume-place">Prist University, Thanjavur ,Tamil Nadu</div>
+                                    <p class="resume-desc">Gained strong foundation in computer science fundamentals and programming.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-card reveal-up" data-delay="500">
+                            <div class="resume-card-header">
+                                <h3 class="resume-card-title">
+                                    <i class="fas fa-briefcase text-pink"></i> Experience
+                                </h3>
+                            </div>
+                            <div class="resume-timeline">
+                                <div class="resume-item">
+                                    <div class="resume-date">2024 - Present</div>
+                                    <h4 class="resume-item-title">Software Trainer</h4>
+                                    <div class="resume-place">Isysway Technologies   Thanjavur, Tamil Nadu</div>
+                                    <p class="resume-desc">Conducting comprehensive training sessions on Tally Prime and other software applications for students and professionals.</p>
+                                </div>
+                                <div class="resume-item">
+                                    <div class="resume-date">2021 - 2022</div>
+                                    <h4 class="resume-item-title">Freelancer </h4>
+                                    <div class="resume-place">Thanjavur, Tamil Nadu</div>
+                                    <p class="resume-desc">Creating And Detail Oriented Freelance Video Editor with 1.5 years Of Expreience In Transforming the Raw Fottage To Visual Stories           .</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-card reveal-up" data-delay="700">
+                            <div class="resume-card-header">
+                                <h3 class="resume-card-title">
+                                    <i class="fas fa-certificate text-green"></i> Certifications
+                                </h3>
+                            </div>
+                            <div class="resume-timeline">
+                                <div class="resume-item">
+                                    <div class="resume-date">2022</div>
+                                    <h4 class="resume-item-title">Certified Tally Professional</h4>
+                                    <div class="resume-place">Tally Solutions</div>
+                                    <p class="resume-desc">Expert-level certification in Tally Prime and accounting procedures.</p>
+                                </div>
+                                <div class="resume-item">
+                                    <div class="resume-date">2021</div>
+                                    <h4 class="resume-item-title">Basic Video Editing</h4>
+                                    <div class="resume-place">Online Learning Platform</div>
+                                    <p class="resume-desc">Foundational skills in video editing and production techniques.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-profiles reveal-item" data-delay="900">
+                        <h3 class="profiles-title">Professional Profiles</h3>
+                        <div class="profiles-container">
+                            <a href="https://www.linkedin.com/in/karthik2004?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="profile-link" target="_blank">
+                                <i class="fab fa-linkedin text-cyan"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/YKR-20" class="profile-link" target="_blank">
+                                <i class="fab fa-github text-pink"></i> GitHub
+                            </a>
+                            <a href="https://www.instagram.com/y__k__r_?igsh=MWxxNWpxZTA5YWlkdg==" class="profile-link" target="_blank">
+                                <i class="fab fa-instagram text-red"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gaming Section -->
+        <section id="gaming" class="section gaming-section">
+            <div class="section-gradient-top"></div>
+            <div class="container section-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-white">Gaming </span>
+                        <span class="text-green text-shadow-green">Zone</span>
+                    </h2>
+                    <div class="section-line bg-green"></div>
+                </div>
+                
+                <div class="grid-2">
+                    <div class="gaming-content order-2 md-order-1 reveal-left">
+                        <h3 class="gaming-subtitle">
+                            My <span class="text-pink">Free Fire</span> Journey
+                        </h3>
+                        
+                        <p class="gaming-text reveal-item">
+                            Free Fire is more than just a game to me—it's a passion that combines strategy, quick reflexes, and teamwork. I've been actively playing and improving my skills, aiming to reach the top ranks in the game.
+                        </p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card border-pink reveal-item" data-delay="400">
+                                <div class="stat-value text-pink">2900+</div>
+                                <div class="stat-label">Total Kills</div>
+                            </div>
+                            
+                            <div class="stat-card border-cyan reveal-item" data-delay="500">
+                                <div class="stat-value text-cyan">Heroic</div>
+                                <div class="stat-label">Current Rank</div>
+                            </div>
+                            
+                            <div class="stat-card border-green reveal-item" data-delay="600">
+                                <div class="stat-value text-green">450+</div>
+                                <div class="stat-label">Booyahs</div>
+                            </div>
+                            
+                            <div class="stat-card border-pink reveal-item" data-delay="700">
+                                <div class="stat-value text-pink">2.45</div>
+                                <div class="stat-label">K/D Ratio</div>
+                            </div>
+                        </div>
+                        
+                        <div class="loadout-card reveal-item" data-delay="800">
+                            <h4 class="loadout-title">Preferred Loadout</h4>
+                            <div class="loadout-tags">
+                                <span class="loadout-tag text-green border-green">AK47</span>
+                                <span class="loadout-tag text-cyan border-cyan">UMP-40</span>
+                                <span class="loadout-tag text-pink border-pink">P90</span>
+                                <span class="loadout-tag text-green border-green">M1014</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://ffshare.garena.com/?region=IND&lang=en" class="btn gaming-btn reveal-item" data-delay="900">
+                            <i class="fas fa-gamepad"></i> Connect For Gaming
+                        </a>
+                    </div>
+                    
+                    <div class="gaming-image order-1 md-order-2 reveal-right">
+                        <img src="D:\karthik PORTFOLIO\YogaTrainerPortfolio\assets\images\folio.jpeg" alt="Gaming setup with neon lights">
+                    </div>
+                </div>
+                
+                <!-- <div class="gaming-highlights">
+                    <h3 class="highlights-title text-center reveal-item" data-delay="1000">
+                        <span class="text-cyan">Gaming </span>Highlights
+                    </h3>
+                    
+                    <div class="highlights-grid">
+                        <div class="highlight-card reveal-up" data-delay="1100">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Epic 1v4 Clutch">
+                                <div class="highlight-overlay"></div>
+                                <div class="highlight-tag bg-pink">Squad Wipe</div>
+                            </div>
+                            <div class="highlight-content">
+                                <h4 class="highlight-title">Epic 1v4 Clutch</h4>
+                                <p class="highlight-desc">Managed to eliminate an entire squad in the final circle with just a pistol.</p>
+                                <div class="highlight-meta">
+                                    <span class="highlight-date text-cyan">
+                                        <i class="fas fa-calendar-alt"></i> 2 weeks ago
+                                    </span>
+                                    <span class="highlight-achievement text-green">
+                                        <i class="fas fa-trophy"></i> 4 kills
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-card reveal-up" data-delay="1200">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Diamond Rank Achievement">
+                                <div class="highlight-overlay"></div>
+                                <div class="highlight-tag bg-cyan">Rank Push</div>
+                            </div>
+                            <div class="highlight-content">
+                                <h4 class="highlight-title">Diamond Rank Achievement</h4>
+                                <p class="highlight-desc">Finally reached Diamond rank after a 5-hour continuous gameplay session.</p>
+                                <div class="highlight-meta">
+                                    <span class="highlight-date text-cyan">
+                                        <i class="fas fa-calendar-alt"></i> 1 month ago
+                                    </span>
+                                    <span class="highlight-achievement text-green">
+                                        <i class="fas fa-trophy"></i> Promotion
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-card reveal-up" data-delay="1300">
+                            <div class="highlight-image">
+                                <img src="https://images.unsplash.com/photo-1580327344181-c1163234e5a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Local Tournament Win">
+                                <div class="highlight-overlay"></div>
+                                <div class="highlight-tag bg-green">Tournament</div>
+                            </div>
+                            <div class="highlight-content">
+                                <h4 class="highlight-title">Local Tournament Win</h4>
+                                <p class="highlight-desc">Led my squad to victory in a local Free Fire competition against 15 teams.</p>
+                                <div class="highlight-meta">
+                                    <span class="highlight-date text-cyan">
+                                        <i class="fas fa-calendar-alt"></i> 3 months ago
+                                    </span>
+                                    <span class="highlight-achievement text-green">
+                                        <i class="fas fa-trophy"></i> 1st Place
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </section> 
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+            <div class="section-gradient-top"></div>
+            <div class="container section-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-white">My </span>
+                        <span class="text-pink text-shadow-pink">Gallery</span>
+                    </h2>
+                    <div class="section-line bg-pink"></div>
+                    <p class="section-desc reveal-item">
+                        Showcasing my video editing projects and gaming highlights. I'm always learning and expanding my creative skills.
+                    </p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal-up" data-delay="400">
+                        <img src="D:\karthik PORTFOLIO\YogaTrainerPortfolio\assets\images\img1.jpeg" alt="Gaming Montage">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon bg-pink">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <h4 class="gallery-title">Gaming Profile</h4>
+                            <p class="gallery-subtitle">Free Fire Highlights</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item reveal-up" data-delay="500">
+                        <img src="D:\karthik PORTFOLIO\YogaTrainerPortfolio\assets\images\img2.jpg" alt="Tally Prime Tutorial">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon bg-cyan">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <h4 class="gallery-title">Vendor Management System</h4>
+                            <p class="gallery-subtitle">Using MYSQL & PHP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item reveal-up" data-delay="600">
+                        <img src="D:\karthik PORTFOLIO\YogaTrainerPortfolio\assets\images\img3.jpg" alt="Smart City">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon bg-green">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h4 class="gallery-title">Smart City Infrastructure</h4>
+                            <p class="gallery-subtitle">ReactJS and MySQL</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item reveal-up" data-delay="700">
+                        <img src="D:\karthik PORTFOLIO\YogaTrainerPortfolio\assets\images\img4.jpg" alt="Locker">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon bg-pink">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <h4 class="gallery-title">   Automated Bank Locker System</h4>
+                            <p class="gallery-subtitle"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item reveal-up" data-delay="800">
+                        <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tournament Day">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon bg-green">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h4 class="gallery-title">Wheater App</h4>
+                            <p class="gallery-subtitle">ReactJS</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item reveal-up" data-delay="900">
+                        <img src="D:\karthik PORTFOLIO\YogaTrainerPortfolio\assets\images\img5.png" alt="Tic-tac-Toe">
+                        <div class="gallery-overlay">
+                            <div class="gallery-icon bg-cyan">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <h4 class="gallery-title">Tic-Tac-Toe</h4>
+                            <p class="gallery-subtitle">Using ReactJs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-more text-center reveal-item" data-delay="1000">
+                    <a href="https://github.com/YKR-20" class="btn btn-secondary">
+                        <i class="fas fa-images"></i> View More Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-gradient-top"></div>
+            <div class="container section-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="text-white">Get In </span>
+                        <span class="text-cyan text-shadow-cyan">Touch</span>
+                    </h2>
+                    <div class="section-line bg-cyan"></div>
+                    <p class="section-desc reveal-item">
+                        Have a project in mind or want to connect for gaming? Feel free to reach out through any of the channels below.
+                    </p>
+                </div>
+                
+                <div class="grid-2">
+                    <div class="contact-info reveal-left  ">
+                        <h3 class="contact-subtitle">
+                            Contact <span class="text-pink">Info</span>
+                        </h3>
+                        
+                        <div class="info-list">
+                            <div class="contact-item reveal-item" data-delay="500">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope text-cyan"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:yogakarthikraj123@gmail.com" class="contact-link">yogakarthikraj123@gmail.com</a>
+                                    <p class="contact-desc">Feel free to email me anytime</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item reveal-item" data-delay="600">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone text-pink"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+918220535905" class="contact-link">+91 82205 35905</a>
+                                    <p class="contact-desc">Monday to Friday, 9AM to 6PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item reveal-item" data-delay="700">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt text-green"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <a href="#" class="contact-link">Thanjavur,Tamil Nadu, India</a>
+                                    <p class="contact-desc">Available for online training globally</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links reveal-item" data-delay="800">
+                            <h4 class="social-title">Connect With Me</h4>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/y__k__r_?igsh=MWxxNWpxZTA5YWlkdg==" class="social-icon text-cyan hover-bg-cyan">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://youtube.com/@2kgamers188?si=Fw59Z3WlWLipO0Br" class="social-icon text-pink hover-bg-pink">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/karthik2004?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon text-green hover-bg-green">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://t.me/Yogakarthikraj" class="social-icon text-cyan hover-bg-cyan">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="contact-form-container reveal-right">
+                        <h3 class="contact-subtitle">
+                            Send a <span class="text-green">Message</span>
+                        </h3>
+                        
+                        <form id="contactForm" class="contact-form" action="https://formsubmit.co/yogakarthikraj@example.com" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-button">
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </div> -->
+                            
+                            <!-- These are needed for FormSubmit.co -->
+                            <input type="hidden" name="_subject" value="New message from Portfolio">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home" class="logo-text">Yogakarthikraj</a>
+                    <p class="footer-slogan">Software Trainer & Gaming Enthusiast</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-links-group">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#skills" class="footer-link">Skills</a>
+                        <a href="#resume" class="footer-link">Resume</a>
+                    </div>
+                    
+                    <div class="footer-links-group">
+                        <h4 class="footer-title">More</h4>
+                        <a href="#gaming" class="footer-link">Gaming</a>
+                        <a href="#gallery" class="footer-link">Gallery</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </div>
+                    
+                    <div class="footer-links-group">
+                        <h4 class="footer-title">Connect</h4>
+                        <a href="https://www.instagram.com/y__k__r_?igsh=MWxxNWpxZTA5YWlkdg==" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://youtube.com/@2kgamers188?si=Fw59Z3WlWLipO0Br" class="footer-link"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="https://www.linkedin.com/in/karthik2004?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://t.me/Yogakarthikraj" class="footer-link"><i class="fab fa-telegram"></i> Telegram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="year"></span> Yogakarthikraj. All Rights Reserved.
+                </p>
+                <a href="#home" class="back-to-top">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
